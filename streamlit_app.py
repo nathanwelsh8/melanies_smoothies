@@ -14,7 +14,7 @@ st.write(
 )
 
 my_dataframe = session.table("smoothies.public.fruit_options").select(col('FRUIT_NAME'), col("search_on"))
-st.dataframe(data=my_dateframe, use_container_width=True)
+st.dataframe(data=my_dataframe, use_container_width=True)
 st.stop()
 
 name_on_smoothie = st.text_input("Name on Smoothie")
